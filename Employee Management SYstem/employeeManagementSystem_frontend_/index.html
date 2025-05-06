@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- <script src="script.js" defer></script> -->
+
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management System</h1>
+
+        <div class="search-section">
+            <input type="number" id="searchId" placeholder="Enter Employee ID">
+            <button onclick="searchById()">Search</button>
+        </div>
+        <div id="searchResult"></div>
+
+        <form id="employeeForm">
+            <input type="hidden" id="empId">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="department" placeholder="Department" required>
+            <input type="text" id="role" placeholder="Role" required>
+            <input type="number" id="salary" placeholder="Salary" step="0.01" required>
+            <button type="submit">Save</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Role</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTableBody"></tbody>
+        </table>
+    </div>
+   
+</body>
+</html>
