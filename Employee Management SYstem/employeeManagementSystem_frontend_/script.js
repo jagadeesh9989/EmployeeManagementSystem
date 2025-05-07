@@ -27,30 +27,6 @@ function loadEmployees() {
         });
 }
 
-// function loadEmployees() {
-//     fetch(API_URL)
-//         .then(res => res.json())
-//         .then(data => {
-//             const tbody = document.getElementById('employeeTableBody');
-//             tbody.innerHTML = '';  // Clear the current table contents
-//             data.forEach(emp => {
-//                 tbody.innerHTML += `
-//                     <tr>
-//                         <td>${emp.id}</td>
-//                         <td>${emp.name}</td>
-//                         <td>${emp.department}</td>
-//                         <td>${emp.role}</td>
-//                         <td>${emp.salary}</td>
-//                         <td>
-//                             <button onclick="editEmployee(${emp.id})">Edit</button>
-//                             <button onclick="deleteEmployee(${emp.id})">Delete</button>
-//                         </td>
-//                     </tr>
-//                 `;
-//             });
-//         })
-//         .catch(error => console.error('Error loading employees:', error));
-// }
 
 
 function handleFormSubmit(e) {
